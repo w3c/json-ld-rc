@@ -2,6 +2,7 @@
     "@context": {
         "type": "@type",
         "id": "@id",
+        "none": "@none",
 
         "as": "https://www.w3.org/ns/activitystreams#",
         "bibo" : "http://purl.org/ontology/bibo/",
