@@ -1,0 +1,23 @@
+{
+    "@context": {
+        "earl": "http://www.w3.org/ns/earl#",
+        "cnt": "http://www.w3.org/2008/content#",
+        "ht": "http://www.w3.org/2006/http#",
+        "ptr": "http://www.w3.org/2009/pointers#",
+        "ctag": "http://commontag.org/ns#",
+        "gldp": "http://www.w3.org/ns/people#",
+        "gr": "http://purl.org/goodrelations/v1#",
+        "grddl": "http://www.w3.org/2003/g/data-view#",
+        "ical": "http://www.w3.org/2002/12/cal/icaltzd#",
+        "rev": "http://purl.org/stuff/rev#",
+        "rdfa": "http://www.w3.org/ns/rdfa#",
+        "rif": "http://www.w3.org/2007/rif#",
+        "sd": "http://www.w3.org/ns/sparql-service-description#",
+        "v": "http://rdf.data-vocabulary.org/#",
+        "xml": "http://www.w3.org/XML/1998/namespace",
+        "wdr": "http://www.w3.org/2007/05/powder#",
+        "wdrs": "http://www.w3.org/2007/05/powder-s#",
+        "describedby": "http://www.w3.org/2007/05/powder-s#describedby",
+        "role": "http://www.w3.org/1999/xhtml/vocab#role"
+    }
+}
