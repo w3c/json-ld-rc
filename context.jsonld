@@ -46,7 +46,7 @@
             "@id" : "xhv:license",
             "@type": "@id"
         },
-        "label": "rdf:label",
+        "label": "rdfs:label",
         "comment": "rdfs:comment",
         "isDefinedBy": {
             "@id" : "rdfs:isDefinedBy",
