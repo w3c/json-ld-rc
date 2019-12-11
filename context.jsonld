@@ -3,6 +3,8 @@
         "type": "@type",
         "id": "@id",
         "none": "@none",
+        "language": "@language",
+        "direction": "@direction",
 
         "as": "https://www.w3.org/ns/activitystreams#",
         "bibo" : "http://purl.org/ontology/bibo/",
@@ -57,6 +59,7 @@
             "@id" : "rdfs:seeAlso",
             "@type" : "@id"
         },
-        "HTML": "rdf:HTML"
+        "HTML": "rdf:HTML",
+        "JSON": "rdf:JSON"
     }
 }
