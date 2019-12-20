@@ -5,6 +5,7 @@
         "none": "@none",
         "language": "@language",
         "direction": "@direction",
+        "json": "@json",
 
         "as": "https://www.w3.org/ns/activitystreams#",
         "bibo" : "http://purl.org/ontology/bibo/",
