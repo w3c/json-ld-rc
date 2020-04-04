@@ -1,11 +1,5 @@
 {
     "@context": {
-        "type": "@type",
-        "id": "@id",
-        "none": "@none",
-        "language": "@language",
-        "direction": "@direction",
-        "json": "@json",
 
         "as": "https://www.w3.org/ns/activitystreams#",
         "bibo" : "http://purl.org/ontology/bibo/",
@@ -44,23 +38,6 @@
         "vcard": "http://www.w3.org/2006/vcard/ns#",
         "void": "http://rdfs.org/ns/void#",
         "xhv": "http://www.w3.org/1999/xhtml/vocab#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
 
-        "license": {
-            "@id" : "xhv:license",
-            "@type": "@id"
-        },
-        "label": "rdfs:label",
-        "comment": "rdfs:comment",
-        "isDefinedBy": {
-            "@id" : "rdfs:isDefinedBy",
-            "@type" : "@id"
-        },
-        "seeAlso": {
-            "@id" : "rdfs:seeAlso",
-            "@type" : "@id"
-        },
-        "HTML": "rdf:HTML",
-        "JSON": "rdf:JSON"
     }
 }

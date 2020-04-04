@@ -1,0 +1,16 @@
+{
+    "@context": {"@id": {
+        "cc": {"@id": "http://creativecommons.org/ns#", "@prefix": true},
+        "dc11": {"@id": "http://purl.org/dc/elements/1.1/", "@prefix": true},
+        "dcterms": {"@id": "http://purl.org/dc/terms/", "@prefix": true},
+        "dctype": {"@id": "http://purl.org/dc/dcmitype/", "@prefix": true},
+        "foaf": {"@id": "http://xmlns.com/foaf/0.1/", "@prefix": true},
+        "owl": {"@id": "http://www.w3.org/2002/07/owl#", "@prefix": true},
+        "prov": {"@id": "http://www.w3.org/ns/prov#", "@prefix": true},
+        "rdf": {"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "@prefix": true},
+        "rdfs": {"@id": "http://www.w3.org/2000/01/rdf-schema#", "@prefix": true},
+        "schema": {"@id": "http://schema.org/", "@prefix": true},
+        "skos": {"@id": "http://www.w3.org/2004/02/skos/core#", "@prefix": true},
+        "xsd": {"@id": "http://www.w3.org/2001/XMLSchema#", "@prefix": true}
+    }
+}

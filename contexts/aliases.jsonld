@@ -1,0 +1,10 @@
+{
+    "@context": {
+        "type": "@type",
+        "id": "@id",
+        "none": "@none",
+        "language": "@language",
+        "direction": "@direction",
+        "json": "@json"
+    }
+}
