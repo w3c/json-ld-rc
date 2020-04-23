@@ -8,25 +8,28 @@
         "schema"   : "http://schema.org/",
         "xsd"      : "http://www.w3.org/2001/XMLSchema#",
 
-        "type"      : "@type",
-        "id"        : "@id",
-        "none"      : "@none",
-        "language"  : "@language",
-        "direction" : "@direction",
-        "json"      : "@json",
         "HTML"      : "rdf:HTML",
         "JSON"      : "rdf:JSON",
 
-        "license"     : {
-            "@id"   : "http://www.w3.org/1999/xhtml/vocab#license",
-            "@type" : "@id"
-        },
-        "label"       : "rdfs:label",
+        "direction" : "@direction",
+        "graph"     : "@graph",
+        "id"        : "@id",
+        "included"  : "@included",
+        "json"      : "@json",
+        "language"  : "@language",
+        "none"      : "@none",
+        "type"      : "@type",
+
         "comment"     : "rdfs:comment",
         "isDefinedBy" : {
             "@id"   : "rdfs:isDefinedBy",
             "@type" : "@id"
         },
+        "license"     : {
+            "@id"   : "schema:license",
+            "@type" : "@id"
+        },
+        "label"       : "rdfs:label",
         "seeAlso": {
             "@id"   : "rdfs:seeAlso",
             "@type" : "@id"
