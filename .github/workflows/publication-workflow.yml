@@ -1,0 +1,33 @@
+# This workflow builds alternate versions of the RDFa initial context
+# and the derived JSON-LD context.
+name: RDFa Initial Context publication
+author: Gregg Kellogg
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
+    # change this to (see https://github.com/ruby/setup-ruby#versioning):
+    # uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
+      with:
+        ruby-version: 2.7
+    - name: Install dependencies
+      run: bundle install
+    - name: Create derivative files
+      run: bundle exec rake
+    - name: Commit derived files
+      uses: stefanzweifel/git-auto-commit-action@v4.1.6
+      with:
+        commit_message: Update derived files
+        branch: ${{ github.head_ref }}
+        file_pattern: *.ttl *.rdf *.jsonld
+        repository: .
+        commit_user_name: Context Update Bot
+        commit_user_email: gregg@greggkellogg.net
+        commit_author: Gregg Kellogg <gregg@greggkellogg.net>
