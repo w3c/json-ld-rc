@@ -11,6 +11,6 @@ File.open(ARGV[0]) do |f|
     sort_by {|o| o['rdfa:prefix']}.
     each do |obj|
 
-    $stdout.puts "@prefix #{obj['rdfa:prefix']}: #{obj['rdfa:uri']} ."
+    $stdout.puts "@prefix #{obj['rdfa:prefix']}: <#{obj['rdfa:uri']}> ."
   end
 end
