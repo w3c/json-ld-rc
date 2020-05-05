@@ -22,5 +22,5 @@ end
 
 desc "Build context from rdfa-1.1.jsonld"
 file "context.jsonld" => "rdfa-1.1.jsonld" do
-  sh "scripts/gen_context.rb rdfa-1.1.jsonld > context.jsonld" 
+  sh "ruby scripts/gen_context.rb rdfa-1.1.jsonld > context.jsonld" 
 end
