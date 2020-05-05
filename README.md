@@ -11,6 +11,10 @@ On a pull request, the files used to build the context, Turtle, RDF/XML, and JSO
 
 Files are built using a [GitHub Workflow](https://developer.github.com/v3/actions/workflows/) using a series of Ruby scripts to generate the associated files. The workflow is started when a Pull Request is created or updated.
 
+## Turtle Prefixes
+
+In addition to the context, and RDF versions of the RDFa initial context, a Turtle file containing all prefix definitions is created as prefixes.ttl as part of the automatic integration.
+
 ## Contributing to the Repository
 
 Use the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative—by including the issue or bug number for example.
