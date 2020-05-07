@@ -7,13 +7,13 @@ This is the repository for a recommended context for JSON-LD 1.1, developed and 
 
 ## Automatically Derived Files
 
-On a pull request, the files used to build the context, Turtle, RDF/XML, and JSON-LD representations are built from the RDFa Initial Context in rdfa-1.1.html. These files should not be modified by hand.
+On a pull request, the files used to build the context, Turtle, RDF/XML, and JSON-LD representations are built from the RDFa Initial Context in [rdfa-1.1.html](./rdfa-1.1.html). These files should not be modified by hand.
 
 Files are built using a [GitHub Workflow](https://developer.github.com/v3/actions/workflows/) using a series of Ruby scripts to generate the associated files. The workflow is started when a Pull Request is created or updated.
 
 ## Turtle Prefixes
 
-In addition to the context, and RDF versions of the RDFa initial context, a Turtle file containing all prefix definitions is created as prefixes.ttl as part of the automatic integration.
+In addition to the context, and RDF versions of the RDFa initial context, a Turtle file containing all prefix definitions is created as [prefixes.ttl](./prefixes.ttl) as part of the automatic integration.
 
 ## Contributing to the Repository
 
