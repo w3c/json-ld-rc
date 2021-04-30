@@ -25,6 +25,8 @@ GEM
     multi_json (1.15.0)
     nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.1-x86_64-linux)
+      racc (~> 1.4)
     nokogumbo (2.0.4)
       nokogiri (~> 1.8, >= 1.8.4)
     racc (1.5.2)
@@ -55,7 +57,7 @@ GEM
     rdf-xsd (3.1.1)
       rdf (~> 3.1)
       rexml (~> 3.2)
-    rexml (3.2.4)
+    rexml (3.2.5)
     scanf (1.0.0)
     sxp (1.1.0)
       rdf (~> 3.1)
@@ -64,6 +66,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   json-ld
