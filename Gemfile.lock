@@ -1,20 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    concurrent-ruby (1.1.8)
-    ebnf (2.1.2)
+    amazing_print (1.3.0)
+    concurrent-ruby (1.1.9)
+    ebnf (2.2.1)
+      amazing_print (~> 1.2)
       htmlentities (~> 4.3)
       rdf (~> 3.1)
       scanf (~> 1.0)
       sxp (~> 1.1)
-    haml (5.2.1)
+      unicode-types (~> 1.6)
+    haml (5.2.2)
       temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     htmlentities (4.3.4)
-    json-canonicalization (0.2.0)
-    json-ld (3.1.8)
+    json-canonicalization (0.2.1)
+    json-ld (3.1.10)
       htmlentities (~> 4.3)
       json-canonicalization (~> 0.2)
       link_header (~> 0.0, >= 0.0.8)
@@ -23,28 +26,28 @@ GEM
       rdf (~> 3.1)
     link_header (0.0.8)
     multi_json (1.15.0)
-    nokogiri (1.11.4-x86_64-darwin)
+    nokogiri (1.12.5-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.11.4-x86_64-linux)
+    nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
-    nokogumbo (2.0.4)
-      nokogiri (~> 1.8, >= 1.8.4)
+    nokogiri (1.12.5-x86_64-linux)
+      racc (~> 1.4)
     racc (1.5.2)
     rack (2.2.3)
-    rake (13.0.3)
-    rdf (3.1.10)
+    rake (13.0.6)
+    rdf (3.1.15)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
     rdf-aggregate-repo (3.1.0)
       rdf (~> 3.1)
-    rdf-rdfa (3.1.2)
-      haml (~> 5.1)
+    rdf-rdfa (3.1.3)
+      haml (~> 5.2)
       htmlentities (~> 4.3)
-      rdf (~> 3.1, >= 3.1.2)
+      rdf (~> 3.1, >= 3.1.13)
       rdf-aggregate-repo (~> 3.1)
-      rdf-vocab (~> 3.1, >= 3.1.5)
+      rdf-vocab (~> 3.1, >= 3.1.11)
       rdf-xsd (~> 3.1)
-    rdf-rdfxml (3.1.0)
+    rdf-rdfxml (3.1.1)
       htmlentities (~> 4.3)
       rdf (~> 3.1)
       rdf-rdfa (~> 3.1)
@@ -52,8 +55,8 @@ GEM
     rdf-turtle (3.1.3)
       ebnf (~> 2.1)
       rdf (~> 3.1, >= 3.1.8)
-    rdf-vocab (3.1.10)
-      rdf (~> 3.1, >= 3.1.8)
+    rdf-vocab (3.1.14)
+      rdf (~> 3.1, >= 3.1.12)
     rdf-xsd (3.1.1)
       rdf (~> 3.1)
       rexml (~> 3.2)
@@ -63,15 +66,16 @@ GEM
       rdf (~> 3.1)
     temple (0.8.2)
     tilt (2.0.10)
+    unicode-types (1.7.0)
 
 PLATFORMS
+  arm64-darwin-20
   x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
   json-ld
   nokogiri
-  nokogumbo
   rake
   rdf
   rdf-rdfa
@@ -79,4 +83,4 @@ DEPENDENCIES
   rdf-turtle
 
 BUNDLED WITH
-   2.2.3
+   2.2.26
