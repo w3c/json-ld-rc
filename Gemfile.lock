@@ -33,7 +33,7 @@ GEM
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     racc (1.6.2)
-    rack (2.2.6.2)
+    rack (2.2.6.3)
     rake (13.0.6)
     rdf (3.1.15)
       hamster (~> 3.0)
