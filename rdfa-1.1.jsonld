@@ -1,527 +1,571 @@
 {
   "@context": {
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "cc": "http://creativecommons.org/ns#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "ctag": "http://commontag.org/ns#",
+    "dc": "http://purl.org/dc/terms/",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "duv": "https://www.w3.org/ns/duv#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "gr": "http://purl.org/goodrelations/v1#",
+    "grddl": "http://www.w3.org/2003/g/data-view#",
+    "ical": "http://www.w3.org/2002/12/cal/icaltzd#",
+    "jsonld": "http://www.w3.org/ns/json-ld#",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    "ma": "http://www.w3.org/ns/ma-ont#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "og": "http://ogp.me/ns#",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfa": "http://www.w3.org/ns/rdfa#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rev": "http://purl.org/stuff/rev#",
+    "rif": "http://www.w3.org/2007/rif#",
+    "rr": "http://www.w3.org/ns/r2rml#",
+    "schema": "http://schema.org/",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "sioc": "http://rdfs.org/sioc/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "skosxl": "http://www.w3.org/2008/05/skos-xl#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "v": "http://rdf.data-vocabulary.org/#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "void": "http://rdfs.org/ns/void#",
+    "wdr": "http://www.w3.org/2007/05/powder#",
+    "wdrs": "http://www.w3.org/2007/05/powder-s#",
+    "xhv": "http://www.w3.org/1999/xhtml/vocab#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@graph": [
     {
-      "@id": "_:g8820",
-      "http://purl.org/dc/terms/description": "VoID",
-      "rdfa:uri": "http://rdfs.org/ns/void#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/void/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "void"
-    },
-    {
-      "@id": "_:g9680",
-      "http://purl.org/dc/terms/description": "indicates the purpose of the resource. See the XHTML Role Vocabulary for roles in this vocabulary space",
-      "rdfa:term": "role",
-      "rdfa:uri": "http://www.w3.org/1999/xhtml/vocab#role",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/xhtml-role"
-      },
-      "@type": "rdfa:TermMapping"
-    },
-    {
-      "@id": "_:g8480",
-      "http://purl.org/dc/terms/description": "RDFa Vocabulary",
-      "rdfa:uri": "http://www.w3.org/ns/rdfa#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/rdfa-core/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "rdfa"
-    },
-    {
-      "@id": "_:g9240",
-      "http://purl.org/dc/terms/description": "FOAF",
-      "rdfa:uri": "http://xmlns.com/foaf/0.1/",
-      "rdfs:isDefinedBy": {
-        "@id": "http://xmlns.com/foaf/spec/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "foaf"
-    },
-    {
-      "@id": "_:g9140",
-      "http://purl.org/dc/terms/description": "Dublin Core Metadata Terms",
-      "rdfa:uri": "http://purl.org/dc/terms/",
-      "rdfs:isDefinedBy": {
-        "@id": "http://dublincore.org/documents/dcmi-terms/#H2"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "dc"
-    },
-    {
-      "@id": "_:g8900",
-      "http://purl.org/dc/terms/description": "POWDER-S",
-      "rdfa:uri": "http://www.w3.org/2007/05/powder-s#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2009/REC-powder-formal-20090901/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "wdrs"
-    },
-    {
-      "@id": "_:g8440",
-      "http://purl.org/dc/terms/description": "RDF",
-      "rdfa:uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "rdf"
-    },
-    {
       "@id": "http://www.w3.org/profile/rdfa-1.1.html",
-      "http://www.w3.org/1999/xhtml/vocab#stylesheet": {
-        "@id": "/StyleSheets/TR/base.css"
+      "xhv:stylesheet": {
+        "@id": "https://www.w3.org/StyleSheets/TR/base.css"
       }
     },
     {
-      "@id": "_:g9280",
-      "http://purl.org/dc/terms/description": "GoodRelations Ontology",
-      "rdfa:uri": "http://purl.org/goodrelations/v1#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.heppnetz.de/ontologies/goodrelations/v1"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "gr"
-    },
-    {
-      "@id": "_:g8760",
-      "http://purl.org/dc/terms/description": "Sensor, Observation, Sample, and Actuator Ontology",
-      "rdfa:uri": "http://www.w3.org/ns/sosa/",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "sosa"
-    },
-    {
-      "@id": "_:g8700",
-      "http://purl.org/dc/terms/description": "SKOS eXtension for Labels",
-      "rdfa:uri": "http://www.w3.org/2008/05/skos-xl#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2009/REC-skos-reference-20090818/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "skosxl"
-    },
-    {
-      "@id": "_:g7820",
-      "http://purl.org/dc/terms/description": "Activity Vocabulary",
-      "rdfa:uri": "https://www.w3.org/ns/activitystreams#",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/activitystreams-vocabulary/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "as"
-    },
-    {
-      "@id": "_:g8400",
-      "http://purl.org/dc/terms/description": "Data Cubes",
-      "rdfa:uri": "http://purl.org/linked-data/cube#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/vocab-data-cube/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "qb"
-    },
-    {
-      "@id": "_:g8160",
-      "http://purl.org/dc/terms/description": "Ontology for Media Resources",
-      "rdfa:uri": "http://www.w3.org/ns/ma-ont#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2012/REC-mediaont-10-20120209/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "ma"
-    },
-    {
-      "@id": "_:g8280",
-      "http://purl.org/dc/terms/description": "Organizations",
-      "rdfa:uri": "http://www.w3.org/ns/org#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/vocab-org/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "org"
-    },
-    {
-      "@id": "_:g7880",
-      "http://purl.org/dc/terms/description": "Metadata for Tabular Data",
-      "rdfa:uri": "http://www.w3.org/ns/csvw#",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/tabular-metadata/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "csvw"
-    },
-    {
-      "@id": "_:g8200",
-      "http://purl.org/dc/terms/description": "Web Annotation Vocabulary",
-      "rdfa:uri": "http://www.w3.org/ns/oa#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/annotation-vocab/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "oa"
-    },
-    {
-      "@id": "_:g7920",
-      "http://purl.org/dc/terms/description": "Data Catalog Vocabulary",
-      "rdfa:uri": "http://www.w3.org/ns/dcat#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/vocab-dcat/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "dcat"
-    },
-    {
       "@id": "http://www.w3.org/profile/rdfa-1.1",
-      "http://purl.org/dc/terms/creator": {
+      "dc:title": "RDFa Core Initial Context",
+      "dc:creator": {
         "@id": "http://www.ivan-herman.net/foaf#me"
       },
-      "http://purl.org/dc/terms/title": "RDFa Core Initial Context",
-      "http://purl.org/dc/terms/updated": "2016-02-08"
+      "dc:updated": "2020-05-09"
     },
     {
       "@id": "http://www.ivan-herman.net/foaf#me",
-      "http://xmlns.com/foaf/0.1/title": "Digital\n            Publishing Activity Lead",
+      "@type": "foaf:Person",
+      "foaf:name": "Ivan\n              Herman",
+      "foaf:mbox": {
+        "@id": "mailto:ivan@w3.org"
+      },
+      "foaf:workplaceHomepage": {
+        "@id": "http://www.w3.org"
+      },
       "rdfs:seeAlso": {
         "@id": "http://www.ivan-herman.net/foaf"
       },
-      "http://xmlns.com/foaf/0.1/mbox": {
-        "@id": "mailto:ivan@w3.org"
-      },
-      "@type": "http://xmlns.com/foaf/0.1/Person",
-      "http://xmlns.com/foaf/0.1/name": "Ivan\n              Herman",
-      "http://xmlns.com/foaf/0.1/workplaceHomepage": {
-        "@id": "http://www.w3.org"
+      "foaf:title": "Digital\n            Publishing Activity Lead"
+    },
+    {
+      "@id": "_:g7560",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "as",
+      "rdfa:uri": "https://www.w3.org/ns/activitystreams#",
+      "dc:description": "Activity Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/activitystreams-vocabulary/"
+      }
+    },
+    {
+      "@id": "_:g7620",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "csvw",
+      "rdfa:uri": "http://www.w3.org/ns/csvw#",
+      "dc:description": "Metadata for Tabular Data",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/tabular-metadata/"
+      }
+    },
+    {
+      "@id": "_:g7660",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "dcat",
+      "rdfa:uri": "http://www.w3.org/ns/dcat#",
+      "dc:description": "Data Catalog Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      }
+    },
+    {
+      "@id": "_:g7700",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "dqv",
+      "rdfa:uri": "http://www.w3.org/ns/dqv#",
+      "dc:description": "Data Quality Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/vocab-dqv/"
+      }
+    },
+    {
+      "@id": "_:g7740",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "duv",
+      "rdfa:uri": "https://www.w3.org/ns/duv#",
+      "dc:description": "Dataset Usage Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/vocab-duv/"
+      }
+    },
+    {
+      "@id": "_:g7780",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "grddl",
+      "rdfa:uri": "http://www.w3.org/2003/g/data-view#",
+      "dc:description": "GRDDL",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2007/REC-grddl-20070911/"
+      }
+    },
+    {
+      "@id": "_:g7820",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "jsonld",
+      "rdfa:uri": "http://www.w3.org/ns/json-ld#",
+      "dc:description": "JSON-LD",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/json-ld/"
+      }
+    },
+    {
+      "@id": "_:g7860",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "ldp",
+      "rdfa:uri": "http://www.w3.org/ns/ldp#",
+      "dc:description": "Linked Data Platform Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/ldp/"
+      }
+    },
+    {
+      "@id": "_:g7900",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "ma",
+      "rdfa:uri": "http://www.w3.org/ns/ma-ont#",
+      "dc:description": "Ontology for Media Resources",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2012/REC-mediaont-10-20120209/"
+      }
+    },
+    {
+      "@id": "_:g7940",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "oa",
+      "rdfa:uri": "http://www.w3.org/ns/oa#",
+      "dc:description": "Web Annotation Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/annotation-vocab/"
+      }
+    },
+    {
+      "@id": "_:g7980",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "odrl",
+      "rdfa:uri": "http://www.w3.org/ns/odrl/2/",
+      "dc:description": "ODRL Vocabulary & Expression 2.2",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/odrl-vocab/"
+      }
+    },
+    {
+      "@id": "_:g8020",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "org",
+      "rdfa:uri": "http://www.w3.org/ns/org#",
+      "dc:description": "Organizations",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-org/"
+      }
+    },
+    {
+      "@id": "_:g8060",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "owl",
+      "rdfa:uri": "http://www.w3.org/2002/07/owl#",
+      "dc:description": "OWL",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2009/REC-owl2-overview-20091027/"
+      }
+    },
+    {
+      "@id": "_:g8100",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "prov",
+      "rdfa:uri": "http://www.w3.org/ns/prov#",
+      "dc:description": "Provenance Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/prov-o/"
+      }
+    },
+    {
+      "@id": "_:g8140",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "qb",
+      "rdfa:uri": "http://purl.org/linked-data/cube#",
+      "dc:description": "Data Cubes",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-data-cube/"
+      }
+    },
+    {
+      "@id": "_:g8180",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "rdf",
+      "rdfa:uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dc:description": "RDF",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"
+      }
+    },
+    {
+      "@id": "_:g8220",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "rdfa",
+      "rdfa:uri": "http://www.w3.org/ns/rdfa#",
+      "dc:description": "RDFa Vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/rdfa-core/"
+      }
+    },
+    {
+      "@id": "_:g8260",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "rdfs",
+      "rdfa:uri": "http://www.w3.org/2000/01/rdf-schema#",
+      "dc:description": "RDF Schema",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"
+      }
+    },
+    {
+      "@id": "_:g8280",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "rif",
+      "rdfa:uri": "http://www.w3.org/2007/rif#",
+      "dc:description": "RIF",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2010/NOTE-rif-overview-20100622/"
       }
     },
     {
       "@id": "_:g8320",
-      "http://purl.org/dc/terms/description": "OWL",
-      "rdfa:uri": "http://www.w3.org/2002/07/owl#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2009/REC-owl2-overview-20091027/"
-      },
       "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "owl"
-    },
-    {
-      "@id": "_:g8120",
-      "http://purl.org/dc/terms/description": "Linked Data Platform Vocabulary",
-      "rdfa:uri": "http://www.w3.org/ns/ldp#",
+      "rdfa:prefix": "rr",
+      "rdfa:uri": "http://www.w3.org/ns/r2rml#",
+      "dc:description": "R2RML",
       "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/ldp/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "ldp"
-    },
-    {
-      "@id": "_:g8000",
-      "http://purl.org/dc/terms/description": "Dataset Usage Vocabulary",
-      "rdfa:uri": "https://www.w3.org/ns/duv#",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/vocab-duv/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "duv"
-    },
-    {
-      "@id": "_:g8080",
-      "http://purl.org/dc/terms/description": "JSON-LD",
-      "rdfa:uri": "http://www.w3.org/ns/json-ld#",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/json-ld/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "jsonld"
-    },
-    {
-      "@id": "_:g8520",
-      "http://purl.org/dc/terms/description": "RDF Schema",
-      "rdfa:uri": "http://www.w3.org/2000/01/rdf-schema#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "rdfs"
-    },
-    {
-      "@id": "_:g8920",
-      "http://purl.org/dc/terms/description": "RDFa Default Prefix",
-      "rdfa:uri": "http://www.w3.org/1999/xhtml/vocab#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/rdfa-core/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "xhv"
-    },
-    {
-      "@id": "_:g8540",
-      "http://purl.org/dc/terms/description": "RIF",
-      "rdfa:uri": "http://www.w3.org/2007/rif#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2010/NOTE-rif-overview-20100622/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "rif"
-    },
-    {
-      "@id": "_:g9060",
-      "http://purl.org/dc/terms/description": "ccREL",
-      "rdfa:uri": "http://creativecommons.org/ns#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/Submission/2008/SUBM-ccREL-20080501/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "cc"
-    },
-    {
-      "@id": "_:g8240",
-      "http://purl.org/dc/terms/description": "ODRL Vocabulary & Expression 2.2",
-      "rdfa:uri": "http://www.w3.org/ns/odrl/2/",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/odrl-vocab/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "odrl"
-    },
-    {
-      "@id": "_:g8040",
-      "http://purl.org/dc/terms/description": "GRDDL",
-      "rdfa:uri": "http://www.w3.org/2003/g/data-view#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2007/REC-grddl-20070911/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "grddl"
-    },
-    {
-      "@id": "_:g7960",
-      "http://purl.org/dc/terms/description": "Data Quality Vocabulary",
-      "rdfa:uri": "http://www.w3.org/ns/dqv#",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/vocab-dqv/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "dqv"
-    },
-    {
-      "@id": "_:g9600",
-      "http://purl.org/dc/terms/description": "Refers to resource providing a description.",
-      "rdfa:term": "describedby",
-      "rdfa:uri": "http://www.w3.org/2007/05/powder-s#describedby",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2009/REC-powder-formal-20090901/#pp"
-      },
-      "@type": "rdfa:TermMapping"
-    },
-    {
-      "@id": "_:g9180",
-      "http://purl.org/dc/terms/description": "Dublin Core Metadata Terms",
-      "rdfa:uri": "http://purl.org/dc/terms/",
-      "rdfs:isDefinedBy": {
-        "@id": "http://dublincore.org/documents/dcmi-terms/#H2"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "dcterms"
-    },
-    {
-      "@id": "_:g9560",
-      "http://purl.org/dc/terms/description": "The Schema.org vocabulary",
-      "rdfa:uri": "http://schema.org/",
-      "rdfs:isDefinedBy": {
-        "@id": "http://schema.org/docs/full.html"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "schema"
-    },
-    {
-      "@id": "_:g8980",
-      "http://purl.org/dc/terms/description": "XML Schema Datatypes",
-      "rdfa:uri": "http://www.w3.org/2001/XMLSchema#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/xmlschema-2/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "xsd"
-    },
-    {
-      "@id": "_:g8660",
-      "http://purl.org/dc/terms/description": "SKOS Core",
-      "rdfa:uri": "http://www.w3.org/2004/02/skos/core#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2009/REC-skos-reference-20090818/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "skos"
-    },
-    {
-      "@id": "_:g8940",
-      "http://purl.org/dc/terms/description": "XML Reserved Prefix",
-      "rdfa:uri": "http://www.w3.org/XML/1998/namespace",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/REC-xml-names/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "xml"
-    },
-    {
-      "@id": "_:g9200",
-      "http://purl.org/dc/terms/description": "Dublin Core Metadata Element Set, Version 1.1",
-      "rdfa:uri": "http://purl.org/dc/elements/1.1/",
-      "rdfs:isDefinedBy": {
-        "@id": "http://purl.org/dc/elements/1.1/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "dc11"
-    },
-    {
-      "@id": "_:g9320",
-      "http://purl.org/dc/terms/description": "iCalendar terms in RDF",
-      "rdfa:uri": "http://www.w3.org/2002/12/cal/icaltzd#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/2002/12/cal/icaltzd#"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "ical"
-    },
-    {
-      "@id": "_:g9640",
-      "http://purl.org/dc/terms/description": "Refers to a license associated with this context.",
-      "rdfa:term": "license",
-      "rdfa:uri": "http://www.w3.org/1999/xhtml/vocab#license",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.iana.org/assignments/link-relations/link-relations.xml"
-      },
-      "@type": "rdfa:TermMapping"
-    },
-    {
-      "@id": "_:g9100",
-      "http://purl.org/dc/terms/description": "Common Tag Ontology",
-      "rdfa:uri": "http://commontag.org/ns#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://commontag.org/Specification"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "ctag"
-    },
-    {
-      "@id": "_:g8780",
-      "http://purl.org/dc/terms/description": "Time Ontology",
-      "rdfa:uri": "http://www.w3.org/2006/time#",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/2017/REC-owl-time-20171019/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "time"
-    },
-    {
-      "@id": "_:g8860",
-      "http://purl.org/dc/terms/description": "POWDER",
-      "rdfa:uri": "http://www.w3.org/2007/05/powder#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2009/REC-powder-formal-20090901/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "wdr"
+        "@id": "http://www.w3.org/TR/2012/REC-r2rml-20120927/"
+      }
     },
     {
       "@id": "_:g8360",
-      "http://purl.org/dc/terms/description": "Provenance Vocabulary",
-      "rdfa:uri": "http://www.w3.org/ns/prov#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/prov-o/"
-      },
       "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "prov"
+      "rdfa:prefix": "sd",
+      "rdfa:uri": "http://www.w3.org/ns/sparql-service-description#",
+      "dc:description": "SPARQL 1.1 Service Description",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/sparql11-service-description/"
+      }
     },
     {
-      "@id": "_:g9480",
-      "http://purl.org/dc/terms/description": "Google Rich Snippets' Vocabularies",
-      "rdfa:uri": "http://rdf.data-vocabulary.org/#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.google.com/support/webmasters/bin/answer.py?answer=99170"
-      },
+      "@id": "_:g8400",
       "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "v"
+      "rdfa:prefix": "skos",
+      "rdfa:uri": "http://www.w3.org/2004/02/skos/core#",
+      "dc:description": "SKOS Core",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2009/REC-skos-reference-20090818/"
+      }
+    },
+    {
+      "@id": "_:g8440",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "skosxl",
+      "rdfa:uri": "http://www.w3.org/2008/05/skos-xl#",
+      "dc:description": "SKOS eXtension for Labels",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2009/REC-skos-reference-20090818/"
+      }
+    },
+    {
+      "@id": "_:g8460",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "ssn",
+      "rdfa:uri": "http://www.w3.org/ns/ssn/",
+      "dc:description": "Semantic Sensor Network Ontology",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"
+      }
+    },
+    {
+      "@id": "_:g8500",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "sosa",
+      "rdfa:uri": "http://www.w3.org/ns/sosa/",
+      "dc:description": "Sensor, Observation, Sample, and Actuator Ontology",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"
+      }
+    },
+    {
+      "@id": "_:g8520",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "time",
+      "rdfa:uri": "http://www.w3.org/2006/time#",
+      "dc:description": "Time Ontology",
+      "rdfs:isDefinedBy": {
+        "@id": "https://www.w3.org/TR/2017/REC-owl-time-20171019/"
+      }
+    },
+    {
+      "@id": "_:g8560",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "void",
+      "rdfa:uri": "http://rdfs.org/ns/void#",
+      "dc:description": "VoID",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/void/"
+      }
+    },
+    {
+      "@id": "_:g8600",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "wdr",
+      "rdfa:uri": "http://www.w3.org/2007/05/powder#",
+      "dc:description": "POWDER",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2009/REC-powder-formal-20090901/"
+      }
+    },
+    {
+      "@id": "_:g8640",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "wdrs",
+      "rdfa:uri": "http://www.w3.org/2007/05/powder-s#",
+      "dc:description": "POWDER-S",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2009/REC-powder-formal-20090901/"
+      }
+    },
+    {
+      "@id": "_:g8660",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "xhv",
+      "rdfa:uri": "http://www.w3.org/1999/xhtml/vocab#",
+      "dc:description": "RDFa Default Prefix",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/rdfa-core/"
+      }
+    },
+    {
+      "@id": "_:g8680",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "xml",
+      "rdfa:uri": "http://www.w3.org/XML/1998/namespace",
+      "dc:description": "XML Reserved Prefix",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/REC-xml-names/"
+      }
     },
     {
       "@id": "_:g8720",
-      "http://purl.org/dc/terms/description": "Semantic Sensor Network Ontology",
-      "rdfa:uri": "http://www.w3.org/ns/ssn/",
-      "rdfs:isDefinedBy": {
-        "@id": "https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"
-      },
       "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "ssn"
+      "rdfa:prefix": "xsd",
+      "rdfa:uri": "http://www.w3.org/2001/XMLSchema#",
+      "dc:description": "XML Schema Datatypes",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/xmlschema-2/"
+      }
     },
     {
-      "@id": "_:g8620",
-      "http://purl.org/dc/terms/description": "SPARQL 1.1 Service Description",
-      "rdfa:uri": "http://www.w3.org/ns/sparql-service-description#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/sparql11-service-description/"
-      },
+      "@id": "_:g8800",
       "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "sd"
+      "rdfa:prefix": "cc",
+      "rdfa:uri": "http://creativecommons.org/ns#",
+      "dc:description": "ccREL",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/Submission/2008/SUBM-ccREL-20080501/"
+      }
     },
     {
-      "@id": "_:g9400",
-      "http://purl.org/dc/terms/description": "RDF Review Vocabulary",
-      "rdfa:uri": "http://purl.org/stuff/rev#",
-      "rdfs:isDefinedBy": {
-        "@id": "http://vocab.org/review/terms.html"
-      },
+      "@id": "_:g8840",
       "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "rev"
+      "rdfa:prefix": "ctag",
+      "rdfa:uri": "http://commontag.org/ns#",
+      "dc:description": "Common Tag Ontology",
+      "rdfs:isDefinedBy": {
+        "@id": "http://commontag.org/Specification"
+      }
     },
     {
-      "@id": "_:g9360",
-      "http://purl.org/dc/terms/description": "Facebook's Open Graph protocol",
+      "@id": "_:g8880",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "dc",
+      "rdfa:uri": "http://purl.org/dc/terms/",
+      "dc:description": "Dublin Core Metadata Terms",
+      "rdfs:isDefinedBy": {
+        "@id": "http://dublincore.org/documents/dcmi-terms/#H2"
+      }
+    },
+    {
+      "@id": "_:g8920",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "dcterms",
+      "rdfa:uri": "http://purl.org/dc/terms/",
+      "dc:description": "Dublin Core Metadata Terms",
+      "rdfs:isDefinedBy": {
+        "@id": "http://dublincore.org/documents/dcmi-terms/#H2"
+      }
+    },
+    {
+      "@id": "_:g8940",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "dc11",
+      "rdfa:uri": "http://purl.org/dc/elements/1.1/",
+      "dc:description": "Dublin Core Metadata Element Set, Version 1.1",
+      "rdfs:isDefinedBy": {
+        "@id": "http://purl.org/dc/elements/1.1/"
+      }
+    },
+    {
+      "@id": "_:g8980",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "foaf",
+      "rdfa:uri": "http://xmlns.com/foaf/0.1/",
+      "dc:description": "FOAF",
+      "rdfs:isDefinedBy": {
+        "@id": "http://xmlns.com/foaf/spec/"
+      }
+    },
+    {
+      "@id": "_:g9020",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "gr",
+      "rdfa:uri": "http://purl.org/goodrelations/v1#",
+      "dc:description": "GoodRelations Ontology",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.heppnetz.de/ontologies/goodrelations/v1"
+      }
+    },
+    {
+      "@id": "_:g9060",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "ical",
+      "rdfa:uri": "http://www.w3.org/2002/12/cal/icaltzd#",
+      "dc:description": "iCalendar terms in RDF",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2002/12/cal/icaltzd#"
+      }
+    },
+    {
+      "@id": "_:g9100",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "og",
       "rdfa:uri": "http://ogp.me/ns#",
+      "dc:description": "Facebook's Open Graph protocol",
       "rdfs:isDefinedBy": {
         "@id": "http://ogp.me/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "og"
+      }
     },
     {
-      "@id": "_:g8580",
-      "http://purl.org/dc/terms/description": "R2RML",
-      "rdfa:uri": "http://www.w3.org/ns/r2rml#",
+      "@id": "_:g9140",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "rev",
+      "rdfa:uri": "http://purl.org/stuff/rev#",
+      "dc:description": "RDF Review Vocabulary",
       "rdfs:isDefinedBy": {
-        "@id": "http://www.w3.org/TR/2012/REC-r2rml-20120927/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "rr"
+        "@id": "http://vocab.org/review/terms.html"
+      }
     },
     {
-      "@id": "_:g9440",
-      "http://purl.org/dc/terms/description": "SIOC Core Ontology",
+      "@id": "_:g9180",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "sioc",
       "rdfa:uri": "http://rdfs.org/sioc/ns#",
+      "dc:description": "SIOC Core Ontology",
       "rdfs:isDefinedBy": {
         "@id": "http://www.w3.org/Submission/2007/SUBM-sioc-spec-20070612/"
-      },
-      "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "sioc"
+      }
     },
     {
-      "@id": "_:g9520",
-      "http://purl.org/dc/terms/description": "vCard in RDF",
+      "@id": "_:g9220",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "v",
+      "rdfa:uri": "http://rdf.data-vocabulary.org/#",
+      "dc:description": "Google Rich Snippets' Vocabularies",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.google.com/support/webmasters/bin/answer.py?answer=99170"
+      }
+    },
+    {
+      "@id": "_:g9260",
+      "@type": "rdfa:PrefixMapping",
+      "rdfa:prefix": "vcard",
       "rdfa:uri": "http://www.w3.org/2006/vcard/ns#",
+      "dc:description": "vCard in RDF",
       "rdfs:isDefinedBy": {
         "@id": "http://www.w3.org/Submission/2010/SUBM-vcard-rdf-20100120/"
-      },
+      }
+    },
+    {
+      "@id": "_:g9300",
       "@type": "rdfa:PrefixMapping",
-      "rdfa:prefix": "vcard"
+      "rdfa:prefix": "schema",
+      "rdfa:uri": "http://schema.org/",
+      "dc:description": "The Schema.org vocabulary",
+      "rdfs:isDefinedBy": {
+        "@id": "schema:docs/full.html"
+      }
+    },
+    {
+      "@id": "_:g9340",
+      "@type": "rdfa:TermMapping",
+      "rdfa:term": "describedby",
+      "rdfa:uri": "http://www.w3.org/2007/05/powder-s#describedby",
+      "dc:description": "Refers to resource providing a description.",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/2009/REC-powder-formal-20090901/#pp"
+      }
+    },
+    {
+      "@id": "_:g9380",
+      "@type": "rdfa:TermMapping",
+      "rdfa:term": "license",
+      "rdfa:uri": "http://www.w3.org/1999/xhtml/vocab#license",
+      "dc:description": "Refers to a license associated with this context.",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.iana.org/assignments/link-relations/link-relations.xml"
+      }
+    },
+    {
+      "@id": "_:g9420",
+      "@type": "rdfa:TermMapping",
+      "rdfa:term": "role",
+      "rdfa:uri": "http://www.w3.org/1999/xhtml/vocab#role",
+      "dc:description": "indicates the purpose of the resource. See the XHTML Role Vocabulary for roles in this vocabulary space",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/xhtml-role"
+      }
     }
   ]
 }

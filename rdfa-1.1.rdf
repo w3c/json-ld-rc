@@ -1,572 +1,315 @@
-<?xml version='1.0' encoding='utf-8' ?>
-<rdf:RDF xmlns:ns0='http://purl.org/dc/terms/' xmlns:ns1='http://www.w3.org/1999/xhtml/vocab#' xmlns:ns2='http://xmlns.com/foaf/0.1/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:rdfa='http://www.w3.org/ns/rdfa#' xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'>
-<rdf:Description rdf:about='http://www.w3.org/profile/rdfa-1.1'>
-<ns0:title>RDFa Core Initial Context</ns0:title>
-
-<ns0:creator>
-<ns2:Person rdf:about='http://www.ivan-herman.net/foaf#me'>
-<rdfs:seeAlso rdf:resource='http://www.ivan-herman.net/foaf' />
-
-<ns2:mbox rdf:resource='mailto:ivan@w3.org' />
-
-<ns2:name>Ivan
-              Herman</ns2:name>
-
-<ns2:title>Digital
-            Publishing Activity Lead</ns2:title>
-
-<ns2:workplaceHomepage rdf:resource='http://www.w3.org' />
-
-</ns2:Person>
-
-</ns0:creator>
-
-<ns0:updated>2016-02-08</ns0:updated>
-
-</rdf:Description>
-
-<rdf:Description rdf:about='http://www.w3.org/profile/rdfa-1.1.html'>
-<ns1:stylesheet rdf:resource='/StyleSheets/TR/base.css' />
-
-</rdf:Description>
-
-<rdfa:PrefixMapping>
-<ns0:description>Activity Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/activitystreams-vocabulary/' />
-
-<rdfa:prefix>as</rdfa:prefix>
-
-<rdfa:uri>https://www.w3.org/ns/activitystreams#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Metadata for Tabular Data</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/tabular-metadata/' />
-
-<rdfa:prefix>csvw</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/csvw#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Data Catalog Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/vocab-dcat/' />
-
-<rdfa:prefix>dcat</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/dcat#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Data Quality Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/vocab-dqv/' />
-
-<rdfa:prefix>dqv</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/dqv#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Dataset Usage Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/vocab-duv/' />
-
-<rdfa:prefix>duv</rdfa:prefix>
-
-<rdfa:uri>https://www.w3.org/ns/duv#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>GRDDL</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2007/REC-grddl-20070911/' />
-
-<rdfa:prefix>grddl</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2003/g/data-view#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>JSON-LD</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/json-ld/' />
-
-<rdfa:prefix>jsonld</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/json-ld#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Linked Data Platform Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/ldp/' />
-
-<rdfa:prefix>ldp</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/ldp#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Ontology for Media Resources</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2012/REC-mediaont-10-20120209/' />
-
-<rdfa:prefix>ma</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/ma-ont#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Web Annotation Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/annotation-vocab/' />
-
-<rdfa:prefix>oa</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/oa#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>ODRL Vocabulary &amp; Expression 2.2</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/odrl-vocab/' />
-
-<rdfa:prefix>odrl</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/odrl/2/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Organizations</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/vocab-org/' />
-
-<rdfa:prefix>org</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/org#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>OWL</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2009/REC-owl2-overview-20091027/' />
-
-<rdfa:prefix>owl</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2002/07/owl#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Provenance Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/prov-o/' />
-
-<rdfa:prefix>prov</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/prov#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Data Cubes</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/vocab-data-cube/' />
-
-<rdfa:prefix>qb</rdfa:prefix>
-
-<rdfa:uri>http://purl.org/linked-data/cube#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>RDF</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2004/REC-rdf-mt-20040210/' />
-
-<rdfa:prefix>rdf</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>RDFa Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/rdfa-core/' />
-
-<rdfa:prefix>rdfa</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/rdfa#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>RDF Schema</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2004/REC-rdf-mt-20040210/' />
-
-<rdfa:prefix>rdfs</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2000/01/rdf-schema#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>RIF</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2010/NOTE-rif-overview-20100622/' />
-
-<rdfa:prefix>rif</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2007/rif#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>R2RML</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2012/REC-r2rml-20120927/' />
-
-<rdfa:prefix>rr</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/r2rml#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>SPARQL 1.1 Service Description</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/sparql11-service-description/' />
-
-<rdfa:prefix>sd</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/sparql-service-description#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>SKOS Core</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2009/REC-skos-reference-20090818/' />
-
-<rdfa:prefix>skos</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2004/02/skos/core#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>SKOS eXtension for Labels</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2009/REC-skos-reference-20090818/' />
-
-<rdfa:prefix>skosxl</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2008/05/skos-xl#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Semantic Sensor Network Ontology</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/' />
-
-<rdfa:prefix>ssn</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/ssn/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Sensor, Observation, Sample, and Actuator Ontology</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/' />
-
-<rdfa:prefix>sosa</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/ns/sosa/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Time Ontology</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='https://www.w3.org/TR/2017/REC-owl-time-20171019/' />
-
-<rdfa:prefix>time</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2006/time#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>VoID</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/void/' />
-
-<rdfa:prefix>void</rdfa:prefix>
-
-<rdfa:uri>http://rdfs.org/ns/void#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>POWDER</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2009/REC-powder-formal-20090901/' />
-
-<rdfa:prefix>wdr</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2007/05/powder#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>POWDER-S</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2009/REC-powder-formal-20090901/' />
-
-<rdfa:prefix>wdrs</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2007/05/powder-s#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>RDFa Default Prefix</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/rdfa-core/' />
-
-<rdfa:prefix>xhv</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/1999/xhtml/vocab#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>XML Reserved Prefix</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/REC-xml-names/' />
-
-<rdfa:prefix>xml</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/XML/1998/namespace</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>XML Schema Datatypes</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/xmlschema-2/' />
-
-<rdfa:prefix>xsd</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2001/XMLSchema#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>ccREL</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/Submission/2008/SUBM-ccREL-20080501/' />
-
-<rdfa:prefix>cc</rdfa:prefix>
-
-<rdfa:uri>http://creativecommons.org/ns#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Common Tag Ontology</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://commontag.org/Specification' />
-
-<rdfa:prefix>ctag</rdfa:prefix>
-
-<rdfa:uri>http://commontag.org/ns#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Dublin Core Metadata Terms</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://dublincore.org/documents/dcmi-terms/#H2' />
-
-<rdfa:prefix>dc</rdfa:prefix>
-
-<rdfa:uri>http://purl.org/dc/terms/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Dublin Core Metadata Terms</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://dublincore.org/documents/dcmi-terms/#H2' />
-
-<rdfa:prefix>dcterms</rdfa:prefix>
-
-<rdfa:uri>http://purl.org/dc/terms/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Dublin Core Metadata Element Set, Version 1.1</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://purl.org/dc/elements/1.1/' />
-
-<rdfa:prefix>dc11</rdfa:prefix>
-
-<rdfa:uri>http://purl.org/dc/elements/1.1/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>FOAF</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://xmlns.com/foaf/spec/' />
-
-<rdfa:prefix>foaf</rdfa:prefix>
-
-<rdfa:uri>http://xmlns.com/foaf/0.1/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>GoodRelations Ontology</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.heppnetz.de/ontologies/goodrelations/v1' />
-
-<rdfa:prefix>gr</rdfa:prefix>
-
-<rdfa:uri>http://purl.org/goodrelations/v1#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>iCalendar terms in RDF</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/2002/12/cal/icaltzd#' />
-
-<rdfa:prefix>ical</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2002/12/cal/icaltzd#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Facebook's Open Graph protocol</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://ogp.me/' />
-
-<rdfa:prefix>og</rdfa:prefix>
-
-<rdfa:uri>http://ogp.me/ns#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>RDF Review Vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://vocab.org/review/terms.html' />
-
-<rdfa:prefix>rev</rdfa:prefix>
-
-<rdfa:uri>http://purl.org/stuff/rev#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>SIOC Core Ontology</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/Submission/2007/SUBM-sioc-spec-20070612/' />
-
-<rdfa:prefix>sioc</rdfa:prefix>
-
-<rdfa:uri>http://rdfs.org/sioc/ns#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>Google Rich Snippets' Vocabularies</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.google.com/support/webmasters/bin/answer.py?answer=99170' />
-
-<rdfa:prefix>v</rdfa:prefix>
-
-<rdfa:uri>http://rdf.data-vocabulary.org/#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>vCard in RDF</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/Submission/2010/SUBM-vcard-rdf-20100120/' />
-
-<rdfa:prefix>vcard</rdfa:prefix>
-
-<rdfa:uri>http://www.w3.org/2006/vcard/ns#</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:PrefixMapping>
-<ns0:description>The Schema.org vocabulary</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://schema.org/docs/full.html' />
-
-<rdfa:prefix>schema</rdfa:prefix>
-
-<rdfa:uri>http://schema.org/</rdfa:uri>
-
-</rdfa:PrefixMapping>
-
-<rdfa:TermMapping>
-<ns0:description>Refers to resource providing a description.</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/2009/REC-powder-formal-20090901/#pp' />
-
-<rdfa:term>describedby</rdfa:term>
-
-<rdfa:uri>http://www.w3.org/2007/05/powder-s#describedby</rdfa:uri>
-
-</rdfa:TermMapping>
-
-<rdfa:TermMapping>
-<ns0:description>Refers to a license associated with this context.</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.iana.org/assignments/link-relations/link-relations.xml' />
-
-<rdfa:term>license</rdfa:term>
-
-<rdfa:uri>http://www.w3.org/1999/xhtml/vocab#license</rdfa:uri>
-
-</rdfa:TermMapping>
-
-<rdfa:TermMapping>
-<ns0:description>indicates the purpose of the resource. See the XHTML Role Vocabulary for roles in this vocabulary space</ns0:description>
-
-<rdfs:isDefinedBy rdf:resource='http://www.w3.org/TR/xhtml-role' />
-
-<rdfa:term>role</rdfa:term>
-
-<rdfa:uri>http://www.w3.org/1999/xhtml/vocab#role</rdfa:uri>
-
-</rdfa:TermMapping>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfa="http://www.w3.org/ns/rdfa#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc11="http://purl.org/dc/elements/1.1/" xmlns:ical="http://www.w3.org/2002/12/cal/icaltzd#" xmlns:schema="http://schema.org/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="http://www.w3.org/profile/rdfa-1.1">
+    <dcterms:title>RDFa Core Initial Context</dcterms:title>
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://www.ivan-herman.net/foaf#me">
+        <foaf:name>Ivan
+              Herman</foaf:name>
+        <foaf:mbox rdf:resource="mailto:ivan@w3.org"/>
+        <foaf:workplaceHomepage rdf:resource="http://www.w3.org"/>
+        <rdfs:seeAlso rdf:resource="http://www.ivan-herman.net/foaf"/>
+        <foaf:title>Digital
+            Publishing Activity Lead</foaf:title>
+      </foaf:Person>
+    </dcterms:creator>
+    <dcterms:updated>2020-05-09</dcterms:updated>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/profile/rdfa-1.1.html">
+    <xhv:stylesheet rdf:resource="https://www.w3.org/StyleSheets/TR/base.css"/>
+  </rdf:Description>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>as</rdfa:prefix>
+    <rdfa:uri>https://www.w3.org/ns/activitystreams#</rdfa:uri>
+    <dcterms:description>Activity Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/activitystreams-vocabulary/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>csvw</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/csvw#</rdfa:uri>
+    <dcterms:description>Metadata for Tabular Data</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/tabular-metadata/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>dcat</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/dcat#</rdfa:uri>
+    <dcterms:description>Data Catalog Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>dqv</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/dqv#</rdfa:uri>
+    <dcterms:description>Data Quality Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/vocab-dqv/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>duv</rdfa:prefix>
+    <rdfa:uri>https://www.w3.org/ns/duv#</rdfa:uri>
+    <dcterms:description>Dataset Usage Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/vocab-duv/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>grddl</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2003/g/data-view#</rdfa:uri>
+    <dcterms:description>GRDDL</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2007/REC-grddl-20070911/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>jsonld</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/json-ld#</rdfa:uri>
+    <dcterms:description>JSON-LD</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/json-ld/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>ldp</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/ldp#</rdfa:uri>
+    <dcterms:description>Linked Data Platform Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/ldp/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>ma</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/ma-ont#</rdfa:uri>
+    <dcterms:description>Ontology for Media Resources</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2012/REC-mediaont-10-20120209/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>oa</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/oa#</rdfa:uri>
+    <dcterms:description>Web Annotation Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/annotation-vocab/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>odrl</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/odrl/2/</rdfa:uri>
+    <dcterms:description>ODRL Vocabulary &amp; Expression 2.2</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/odrl-vocab/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>org</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/org#</rdfa:uri>
+    <dcterms:description>Organizations</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-org/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>owl</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2002/07/owl#</rdfa:uri>
+    <dcterms:description>OWL</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2009/REC-owl2-overview-20091027/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>prov</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/prov#</rdfa:uri>
+    <dcterms:description>Provenance Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/prov-o/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>qb</rdfa:prefix>
+    <rdfa:uri>http://purl.org/linked-data/cube#</rdfa:uri>
+    <dcterms:description>Data Cubes</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-data-cube/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>rdf</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#</rdfa:uri>
+    <dcterms:description>RDF</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>rdfa</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/rdfa#</rdfa:uri>
+    <dcterms:description>RDFa Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/rdfa-core/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>rdfs</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2000/01/rdf-schema#</rdfa:uri>
+    <dcterms:description>RDF Schema</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2004/REC-rdf-mt-20040210/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>rif</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2007/rif#</rdfa:uri>
+    <dcterms:description>RIF</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2010/NOTE-rif-overview-20100622/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>rr</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/r2rml#</rdfa:uri>
+    <dcterms:description>R2RML</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2012/REC-r2rml-20120927/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>sd</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/sparql-service-description#</rdfa:uri>
+    <dcterms:description>SPARQL 1.1 Service Description</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/sparql11-service-description/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>skos</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2004/02/skos/core#</rdfa:uri>
+    <dcterms:description>SKOS Core</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2009/REC-skos-reference-20090818/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>skosxl</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2008/05/skos-xl#</rdfa:uri>
+    <dcterms:description>SKOS eXtension for Labels</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2009/REC-skos-reference-20090818/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>ssn</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/ssn/</rdfa:uri>
+    <dcterms:description>Semantic Sensor Network Ontology</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>sosa</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/ns/sosa/</rdfa:uri>
+    <dcterms:description>Sensor, Observation, Sample, and Actuator Ontology</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/2017/REC-vocab-ssn-20171019/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>time</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2006/time#</rdfa:uri>
+    <dcterms:description>Time Ontology</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/2017/REC-owl-time-20171019/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>void</rdfa:prefix>
+    <rdfa:uri>http://rdfs.org/ns/void#</rdfa:uri>
+    <dcterms:description>VoID</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/void/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>wdr</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2007/05/powder#</rdfa:uri>
+    <dcterms:description>POWDER</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2009/REC-powder-formal-20090901/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>wdrs</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2007/05/powder-s#</rdfa:uri>
+    <dcterms:description>POWDER-S</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2009/REC-powder-formal-20090901/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>xhv</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#</rdfa:uri>
+    <dcterms:description>RDFa Default Prefix</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/rdfa-core/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>xml</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/XML/1998/namespace</rdfa:uri>
+    <dcterms:description>XML Reserved Prefix</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/REC-xml-names/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>xsd</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2001/XMLSchema#</rdfa:uri>
+    <dcterms:description>XML Schema Datatypes</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/xmlschema-2/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>cc</rdfa:prefix>
+    <rdfa:uri>http://creativecommons.org/ns#</rdfa:uri>
+    <dcterms:description>ccREL</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/Submission/2008/SUBM-ccREL-20080501/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>ctag</rdfa:prefix>
+    <rdfa:uri>http://commontag.org/ns#</rdfa:uri>
+    <dcterms:description>Common Tag Ontology</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://commontag.org/Specification"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>dc</rdfa:prefix>
+    <rdfa:uri>http://purl.org/dc/terms/</rdfa:uri>
+    <dcterms:description>Dublin Core Metadata Terms</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://dublincore.org/documents/dcmi-terms/#H2"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>dcterms</rdfa:prefix>
+    <rdfa:uri>http://purl.org/dc/terms/</rdfa:uri>
+    <dcterms:description>Dublin Core Metadata Terms</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://dublincore.org/documents/dcmi-terms/#H2"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>dc11</rdfa:prefix>
+    <rdfa:uri>http://purl.org/dc/elements/1.1/</rdfa:uri>
+    <dcterms:description>Dublin Core Metadata Element Set, Version 1.1</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>foaf</rdfa:prefix>
+    <rdfa:uri>http://xmlns.com/foaf/0.1/</rdfa:uri>
+    <dcterms:description>FOAF</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/spec/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>gr</rdfa:prefix>
+    <rdfa:uri>http://purl.org/goodrelations/v1#</rdfa:uri>
+    <dcterms:description>GoodRelations Ontology</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.heppnetz.de/ontologies/goodrelations/v1"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>ical</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2002/12/cal/icaltzd#</rdfa:uri>
+    <dcterms:description>iCalendar terms in RDF</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/12/cal/icaltzd#"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>og</rdfa:prefix>
+    <rdfa:uri>http://ogp.me/ns#</rdfa:uri>
+    <dcterms:description>Facebook's Open Graph protocol</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>rev</rdfa:prefix>
+    <rdfa:uri>http://purl.org/stuff/rev#</rdfa:uri>
+    <dcterms:description>RDF Review Vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://vocab.org/review/terms.html"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>sioc</rdfa:prefix>
+    <rdfa:uri>http://rdfs.org/sioc/ns#</rdfa:uri>
+    <dcterms:description>SIOC Core Ontology</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/Submission/2007/SUBM-sioc-spec-20070612/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>v</rdfa:prefix>
+    <rdfa:uri>http://rdf.data-vocabulary.org/#</rdfa:uri>
+    <dcterms:description>Google Rich Snippets' Vocabularies</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.google.com/support/webmasters/bin/answer.py?answer=99170"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>vcard</rdfa:prefix>
+    <rdfa:uri>http://www.w3.org/2006/vcard/ns#</rdfa:uri>
+    <dcterms:description>vCard in RDF</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/Submission/2010/SUBM-vcard-rdf-20100120/"/>
+  </rdfa:PrefixMapping>
+  <rdfa:PrefixMapping>
+    <rdfa:prefix>schema</rdfa:prefix>
+    <rdfa:uri>http://schema.org/</rdfa:uri>
+    <dcterms:description>The Schema.org vocabulary</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/docs/full.html"/>
+  </rdfa:PrefixMapping>
+  <rdfa:TermMapping>
+    <rdfa:term>describedby</rdfa:term>
+    <rdfa:uri>http://www.w3.org/2007/05/powder-s#describedby</rdfa:uri>
+    <dcterms:description>Refers to resource providing a description.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/2009/REC-powder-formal-20090901/#pp"/>
+  </rdfa:TermMapping>
+  <rdfa:TermMapping>
+    <rdfa:term>license</rdfa:term>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#license</rdfa:uri>
+    <dcterms:description>Refers to a license associated with this context.</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.iana.org/assignments/link-relations/link-relations.xml"/>
+  </rdfa:TermMapping>
+  <rdfa:TermMapping>
+    <rdfa:term>role</rdfa:term>
+    <rdfa:uri>http://www.w3.org/1999/xhtml/vocab#role</rdfa:uri>
+    <dcterms:description>indicates the purpose of the resource. See the XHTML Role Vocabulary for roles in this vocabulary space</dcterms:description>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/xhtml-role"/>
+  </rdfa:TermMapping>
 </rdf:RDF>
