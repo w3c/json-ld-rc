@@ -65,10 +65,8 @@ GEM
     rdf-xsd (3.3.0)
       rdf (~> 3.3)
       rexml (~> 3.2)
-    rexml (3.3.6)
-      strscan
+    rexml (3.3.9)
     scanf (1.0.0)
-    strscan (3.1.0)
     sxp (2.0.0)
       matrix (~> 0.4)
       rdf (~> 3.3)
